@@ -1,0 +1,85 @@
+/* for 1200 */
+/* Toggle the menu in and out */
+body{
+    max-width: 1000px;
+    margin: auto;
+}
+header {
+    box-shadow: 20px 20px 50px 15px grey;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(30, 99, 228);
+    padding: 27px;
+    text-align: center;
+    color: azure;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+}
+/* we put that float because it is the one keep it in left side */
+ul {
+    list-style-type: none;
+    float: left;
+   
+}
+/* we wanted to come to the botton we use height and left 0 */
+/* display none to hide it and we use the toggle */
+.test {
+    position: fixed;
+	color: aliceblue;
+	text-decoration: none;
+    display: none;
+    background-color: rgb(30, 99, 228);
+    width: 25%;
+    margin: 0;
+    left: 0;
+    height: 100%;
+    padding-top: 50px;
+    
+}
+/* use cursor to use a finger point when we go to that icon */
+.menu-icon {
+    display: flex;
+    cursor: pointer;
+}
+   
+    
+.image1 {
+        float: right;
+        position: absolute;
+        top: 0;
+        right: 5%;
+        margin: 4px;
+        padding: 4px;
+}
+.menu-icon {
+    float: left;
+    position: absolute;
+    top: 0;
+    left: 2%;
+    margin: 4px;
+    padding: 4px;
+}
+
+/* we use width 1200 to match with the size of the page */
+/* margin auto to margin with the size that we want */
+.image3 {
+    display: block;
+    max-width: 1200px;
+    height: 500px;
+    margin: auto;
+    width: 100%;
+}
+
+/* below 800 */
+@media screen and (max-width: 800px) {
+    * {
+      font-size: 30px;
+    }
+    .test {
+        width: 50%;
+    }
+  }
+/* we put the test width for 50% because when the page open and close the size match with that */
